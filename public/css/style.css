@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+  
+  html, body {
+    height: 100vh;
+    overflow: hidden;
+
+  }
+
+  .author{
+      color:hotpink;
+      font-weight: bold;
+  }
+
+  .authorServ{
+    color:greenyellow;
+    
+}
+
+.authorServD{
+    color:crimson;
+    
+}
+
+  .messageD{
+    color: tomato;
+}
+
+.message{
+    word-break: break-all;
+}
+
+  .authorSelf{
+      color: white;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: dimgray;
+  }
+
+ #mesList{
+    overflow-y: scroll;
+    max-height: 94vh; 
+ }
+
+#mesArea {
+    background: rgba(0, 0, 0, 0.15); 
+    padding: 0.25rem; 
+    display: flex;
+    flex-direction: column; 
+    box-sizing: border-box;
+    backdrop-filter: blur(10px); 
+    flex: 1;
+    }
+
+#mesInput { 
+    border: none; 
+    padding: 0.2rem 0.5rem;
+    width: 100%; 
+    border-radius: 2rem; 
+    margin-right: 0.5rem;
+ }
+
+ #mesInput:focus { 
+    outline: none; 
+}
+
+#insertMes > button { 
+    background: #333; 
+    border: none; 
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px; 
+    outline: none; 
+    color: #fff; 
+    font-size: 15px;
+}
+
+#u{
+    flex: 0 0 auto;
+}
+
+
+#insertMes{
+    display: flex;
+    padding: 0.2rem;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;  
+    flex: 0 0 auto; 
+}
+
+#messages { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+#messages > li { 
+    padding: 0.5rem 1rem; 
+}
